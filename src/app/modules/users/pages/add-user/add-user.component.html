@@ -1,0 +1,6 @@
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <input type="text" placeholder="name" formControlName="name" />
+  <input type="text" placeholder="surname" formControlName="surname" />
+  <input type="text" placeholder="comment" formControlName="comment" />
+  <input type="submit" value="enviar" />
+</form>

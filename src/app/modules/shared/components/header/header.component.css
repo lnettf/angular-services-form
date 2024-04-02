@@ -1,0 +1,9 @@
+.items-list {
+    display: flex;
+    gap: 20px;
+
+}
+
+a {
+    text-decoration: none;
+}

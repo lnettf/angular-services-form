@@ -1,0 +1,16 @@
+<p>user-list works!</p>
+
+@if(isLoading === true){
+<h1>Cargando...</h1>
+}@else{
+<ul>
+  @for (user of usersList; track user.id) {
+  <li>
+    {{ user.name }}
+    <button (click)="deleteUser(user.id)">borrar</button>
+  </li>
+  } @empty {
+  <li>There are no items.</li>
+  }
+</ul>
+}
